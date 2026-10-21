@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVERGRAPHY</title>
+    <!-- Google Fonts & FontAwesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header class="header">
+        <h1 class="title">SERVERGRAPHY</h1>
+        <p class="subtitle">Explore my creative portfolio across different categories</p>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs-container">
+        <button class="tab-btn active" data-target="event-posters">Event Posters</button>
+        <button class="tab-btn" data-target="thumbnails">Thumbnails</button>
+        <button class="tab-btn" data-target="led-wall">LED Wall Design</button>
+        <!-- <button class="tab-btn" data-target="others">Others</button> -->
+    </nav>
+
+    <!-- Gallery Sections -->
+    <main class="gallery-container">
+        
+        <!-- Section 1: Event Posters -->
+        <section id="event-posters" class="gallery-section active">
+            <h2 class="section-heading">Event Posters</h2>
+            <div class="grid">
+                <div class="card" onclick="openLightbox('SANRAWA 1.jpg', 'Sanrawa Event Poster')">
+                    <img src="SANRAWA 1.jpg" alt="Event Poster 1">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="card" onclick="openLightbox('Sanrawa main.png', 'Sanrawa Main Event Poster')">
+                    <img src="Sanrawa main.png" alt="Event Poster 2">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="card" onclick="openLightbox('SANRAWA 3.jpg', 'Sanrawa Event Banner')">
+                    <img src="sanrawa 3.jpg" alt="Event Poster 3">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="card" onclick="openLightbox('kanchaí.png', 'Kanchana Anuradhi Fanart')">
+                    <img src="kanchaí.png" alt="Event Poster 3">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="card" onclick="openLightbox('suneera fan art.png', 'Suneera Sumanga Fan Art')">
+                    <img src="suneera fan art.png" alt="Event Poster 3">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="card" onclick="openLightbox('one trinco.jpg', 'One Trinco Event Poster')">
+                    <img src="one trinco.jpg" alt="Event Poster 3">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="card" onclick="openLightbox('rithika.jpg', 'Song Cover Art')">
+                    <img src="rithika.jpg" alt="Event Poster 3">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Thumbnails -->
+        <section id="thumbnails" class="gallery-section">
+            <h2 class="section-heading">Thumbnails</h2>
+            <div class="grid">
+                <div class="card" onclick="openLightbox('Thumbnail 1.jpg', 'Thumbnail for YouTube Video')">
+                    <img src="Thumbnail 1.jpg" alt="Thumbnail 1">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                    <div class="card" onclick="openLightbox('Thumbnail 2.jpg', 'Thumbnail')">
+                    <img src="Thumbnail 2.jpg" alt="Thumbnail 2">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="card" onclick="openLightbox('Thumbnail 3.jpg', 'Thumbnail')">
+                    <img src="Thumbnail 3.jpg" alt="Thumbnail 3">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: LED Wall Design -->
+        <section id="led-wall" class="gallery-section">
+            <h2 class="section-heading">LED Wall Design</h2>
+            <div class="grid">
+                <div class="card" onclick="openLightbox('seethala.png', 'Stage LED Backdrop Animation')">
+                    <img src="seethala.png" alt="LED Wall 1">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="card" onclick="openLightbox('image.png', 'Stage LED Backdrop Animation')">
+                    <img src="image.png" alt="LED Wall 2">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="card" onclick="openLightbox('Screenshot 2026-10-21 210423.png', 'Stage LED Backdrop Animation')">
+                    <img src="Screenshot 2026-10-21 210423.png" alt="LED Wall 3">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Others -->
+        <!-- <section id="others" class="gallery-section">
+            <h2 class="section-heading">Others</h2>
+            <div class="grid">
+                <div class="card" onclick="openLightbox('https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80', 'Brand Identity & Logo')">
+                    <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=600&q=80" alt="Other Design 1">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="card" onclick="openLightbox('https://images.unsplash.com/photo-1626544827763-d516dce335e2?auto=format&fit=crop&w=800&q=80', 'Product Packaging Mockup')">
+                    <img src="https://images.unsplash.com/photo-1626544827763-d516dce335e2?auto=format&fit=crop&w=600&q=80" alt="Other Design 2">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="card" onclick="openLightbox('https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80', 'Vector Graphic Illustration')">
+                    <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=600&q=80" alt="Other Design 3">
+                    <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+    <!-- Lightbox Modal for Full Image View -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="Full View">
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- Footer with Contact & Thank You -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Thank You for Visiting!</h3>
+            <p>Let's create something amazing together.</p>
+            <div class="contact-info">
+                <a href="suchethanatharushan316@gmail.com"><i class="fa-solid fa-envelope"></i> suchethanatharushan316@gmail.com</a>
+                <a href="https://wa.me/94787087277" target="_blank"><i class="fa-brands fa-whatsapp"></i> +94 78 70 87 277</a>
+                
+            </div>
+            <p class="copyright">&copy; 2026 [SERVERGRAPHY]. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File Linking -->
+    <script src="script.js"></script>
+</body>
+</html>
